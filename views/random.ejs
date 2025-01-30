@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random</title>
-  </head>
-  <body>
-    <h1>Random number: <%= num %></h1>
-    <% if(num % 2 === 0) { %>
-    <h3>Angka genap</h3>
-    <% } else { %>
-    <h3>angka ganjil</h3>
-    <% } %>
+<%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs') %>
 
-    <h3>that number is: <%= num%2 === 0 ? 'even' : 'odd' %></h3>
-  </body>
-</html>
+<h1>Random number: <%= num %></h1>
+<% if(num % 2 === 0) { %>
+<h3>Angka genap</h3>
+<% } else { %>
+<h3>angka ganjil</h3>
+<% } %>
+
+<h3>that number is: <%= num%2 === 0 ? 'even' : 'odd' %></h3>
+<%- include('partials/footer.ejs') %>
