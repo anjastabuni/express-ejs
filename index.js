@@ -17,7 +17,7 @@ app.get("/t/:tag", (req, res) => {
 
 app.get("/rand", (req, res) => {
   const num = Math.floor(Math.random() * 10) + 1;
-  res.render("random", { random: num });
+  res.render("random", { num });
 });
 
 app.listen(8080, () => {
